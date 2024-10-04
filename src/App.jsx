@@ -1,11 +1,13 @@
 
+import { useState } from 'react';
 import './App.css'
 import ContactList from './components/ContactList/ContactList';
-import contacts from './JSON/contacts.json';
+import dataContacts from './JSON/dataContacts.json';
 
 
 function App() {
-  
+  const [contacts, setContacts] = useState(dataContacts );
+ 
 
   return (
     <div>

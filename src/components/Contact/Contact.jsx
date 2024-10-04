@@ -1,13 +1,25 @@
 
+import style from './Contact.module.css';
+import { FaPhone, FaUser } from "react-icons/fa";
 
-
-const Contact = ({id, name, number}) => {
+const Contact = ({ name, number}) => {
  
   return (
-    <div>
-      <p>{id}</p>
-      <p>{name}</p>
-      <p>{number}</p>
+    <div className = {style.contact}>
+      <div className = {style.contactInfo}>
+
+      <p>
+          <FaUser className={style.icon} />
+          Name: {name}
+        </p>
+        <p>
+          <FaPhone className={style.icon} />
+          Phone: {number}
+        </p>
+      </div>
+      <div className={style.buttonBlock}>
+      <button className = {style.button}>Delete</button>
+      </div>
     </div>
   )
 }

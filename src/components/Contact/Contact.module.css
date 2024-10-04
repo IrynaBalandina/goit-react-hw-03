@@ -1,0 +1,30 @@
+.contact{
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  max-width: 500px;
+  max-height: 120px;
+}
+
+
+.button{
+background-color: white;
+color: black;
+border-radius: 6px;
+border: 1px solid;
+}
+
+.buttonBlock{
+   padding: 40px 10px 60px 100px;
+display: block;
+
+}
+
+.icon {
+    color: gray;
+    height: 16px;
+    width: 16px;
+  padding-right: 6px;
+  }
