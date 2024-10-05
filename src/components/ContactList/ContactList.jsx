@@ -3,16 +3,17 @@ import style from './ContactList.module.css'
 
 const ContactList = ({contacts}) => {
   return (
-    <div className= {style.contacts}>
+    <div className= {style.contactsList}>
       <ul className = {style['contactsList']}>
-      {contacts.map(({ id, name, number}) => {
+      {contacts.map(contact => {
         return (
 
           
           <Contact
-          key={id}
-            name={name}
-            number={number}
+          key={contact.id}
+          id = {contact.id}
+            name={contact.name}
+            number={contact.number}
           />
          
         );
@@ -21,8 +22,8 @@ const ContactList = ({contacts}) => {
 
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default ContactList;
 

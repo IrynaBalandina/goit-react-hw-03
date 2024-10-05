@@ -1,8 +1,21 @@
 
 
-const SearchBox = () => {
+import style from './SearchBox.module.css';
+
+
+const SearchBox = ({value, onSearch} ) => {
+  
+
   return (
-    <div>SearchBox</div>
+    <div>
+      <p>Find contacts by name</p>
+   <input 
+   className = {style.searchInput}
+   type="text" 
+   value = {value}  
+   onChange={event => onSearch(event.target.value)}/>
+
+    </div>
   )
 }
 
