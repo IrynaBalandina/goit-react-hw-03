@@ -14,12 +14,18 @@ function App() {
   const filterContacts = contacts.filter(contact => contact.name.toLowerCase().includes(search.toLowerCase())
 
 );
+const submitForm = (newContact) => {
+  setContacts([...contacts, newContact]);
+};
+
 
   return (
     <div>
     <h1>Phonebook</h1>
-    <p>{search}</p>
-    <ContactForm/>
+   
+    <ContactForm
+    onAddContact={submitForm}
+    />
     <SearchBox
      value ={search}
      onSearch = {setSearch}
