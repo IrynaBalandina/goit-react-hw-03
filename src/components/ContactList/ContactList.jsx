@@ -1,7 +1,7 @@
 import Contact from "../Contact/Contact";
 import style from './ContactList.module.css'
 
-const ContactList = ({contacts}) => {
+const ContactList = ({onDeleteProfile, contacts}) => {
   return (
     <div className= {style.contactsList}>
       <ul className = {style['contactsList']}>
@@ -14,6 +14,7 @@ const ContactList = ({contacts}) => {
           id = {contact.id}
             name={contact.name}
             number={contact.number}
+            onDeleteProfile = {onDeleteProfile}
           />
          
         );

@@ -18,7 +18,12 @@ const submitForm = (newContact) => {
   setContacts([...contacts, newContact]);
 };
 
+const onDeleteProfile = (contactId) => { 
+  const updatedUsers = contacts.filter((user) => user.id !== contactId);
+ 
 
+  setContacts(updatedUsers)
+}
   return (
     <div>
     <h1>Phonebook</h1>
@@ -32,6 +37,8 @@ const submitForm = (newContact) => {
      />
     <ContactList 
     contacts = {filterContacts}
+    onDeleteProfile={onDeleteProfile}
+   
     />
 
   </div>
