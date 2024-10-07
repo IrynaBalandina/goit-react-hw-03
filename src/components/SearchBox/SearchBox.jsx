@@ -8,7 +8,7 @@ const SearchBox = ({value, onSearch} ) => {
 
   return (
     <div className = {style.searchField}>
-      <p>Find contacts by name</p>
+      <p className = {style.searchTitle}>Find contacts by name</p>
    <input 
    className = {style.searchInput}
    type="text" 

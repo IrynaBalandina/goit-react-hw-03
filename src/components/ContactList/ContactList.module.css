@@ -1,10 +1,14 @@
 
 
 
-.contactsList{
+.list{
 display: flex;
 flex-wrap: wrap;
 row-gap: 24px;
+list-style: none;
 
 }
    
+.item{
+  
+}

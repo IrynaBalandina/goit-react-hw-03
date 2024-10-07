@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import './App.css'
+import style from  './App.module.css';
 import ContactList from './components/ContactList/ContactList';
 import dataContacts from './JSON/dataContacts.json';
 import ContactForm from './components/ContactForm/ContactForm';
@@ -37,7 +37,7 @@ const onDeleteProfile = (contactId) => {
 }
   return (
     <div>
-    <h1>Phonebook</h1>
+    <h1 className = {style.title}>Phonebook</h1>
    
     <ContactForm
     onAddContact={submitForm}

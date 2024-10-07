@@ -2,7 +2,7 @@
     display: flex;
     gap: 16px;
     flex-direction: column;
-    width: 360px;
+    width: 320px;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid;
@@ -15,7 +15,7 @@
     }
 
     .field{
-        width: 320px;
+        width: 280px;
         padding: 20px;
         border-radius: 8px;
         border: 1px solid;
