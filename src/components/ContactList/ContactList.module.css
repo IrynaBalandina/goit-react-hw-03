@@ -2,8 +2,9 @@
 
 
 .contactsList{
-display:inline-block;
-flex-direction: column;
+display: flex;
+flex-wrap: wrap;
 row-gap: 24px;
-   }
+
+}
    

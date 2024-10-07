@@ -1,0 +1,13 @@
+.searchField{
+    margin-top: 20px;
+    display:inline-block;
+   
+    margin-left:0;
+}
+
+.searchInput{
+    width: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+}

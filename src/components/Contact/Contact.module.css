@@ -1,13 +1,14 @@
 .contact{
   border: 1px solid;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
-  display: flex;
-  max-width: 500px;
+
+  max-width: 300px;
   max-height: 100px;
   margin-right: 60px;
-
+  display: flex;
+  
 }
 
 
@@ -19,14 +20,15 @@ border: 1px solid;
 }
 
 .buttonBlock{
-   padding: 40px 20px 60px 100px;
+   padding: 30px 8px 10px 20px;
 display: block;
 
 }
 
 .icon {
     color: gray;
-    height: 16px;
-    width: 16px;
-  padding-right: 6px;
+    height: 12px;
+    width: 12px;
+padding-right: 8px;
+padding-left: 8px;
   }

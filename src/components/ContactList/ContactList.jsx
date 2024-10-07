@@ -10,7 +10,7 @@ const ContactList = ({onDeleteProfile, contacts}) => {
 
           
           <Contact
-          key={contact.id}
+          key={contacts.id}
           id = {contact.id}
             name={contact.name}
             number={contact.number}
